@@ -1,0 +1,86 @@
+{
+"Title": "first Epic Greatest Survey",
+"Author": "misiek Bury",
+"Date": "2015-07-23",
+"Description": "desription of Survey",
+"Questions":[
+    {
+     "Id": 1,
+     "MinimalPointToGetNextQuestion": 0,
+     "QuestionType": "OpenQuestion",
+     "QuestionText": "Podaj swoje imię i nazwisko?",
+     "DefaultNextQuestionId": 2
+    },
+    {    
+     "Id":2,
+     "MinimalPointToGetNextQuestion": 0,
+     "QuestionType": "SingleChoice",
+     "QuestionText": "Jaką pracę Pan/Pani wykonuje?",
+     "PossibleAnswers":[
+         {
+          "Id":1,
+          "Text": "student", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba to student",
+          "NextQuestionId": -1
+         },
+         {
+          "Id":2,             
+          "Text": "własna działalność", 
+          "Rate": 5,
+          "DescriptionRate": "Ta osoba prowadzi własną działalność",
+          "NextQuestionId": 3
+         },
+         {
+          "Id":3,             
+          "Text": "praca w firmie", 
+          "Rate": 4,
+          "DescriptionRate": "Ta osoba pracuje w firmie",
+          "NextQuestionId": 3
+         }]
+    },
+        {    
+     "Id":3,
+     "MinimalPointToGetNextQuestion": 0,
+     "QuestionType": "SingleChoice",
+     "QuestionText": "Jaki jest Pana/Pani stan cywilny?",
+     "PossibleAnswers":[
+         {
+          "Id":1,
+          "Text": "wolny/wolna", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba jest stanu wolnego",
+          "NextQuestionId": 4
+         },
+         {
+          "Id":2,
+          "Text": "w związku", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba jest w związku",
+          "NextQuestionId": 4
+         },
+         {
+          "Id":3,
+          "Text": "rozwiedziony/rozwiedziona", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba jest rozwiedziona",
+          "NextQuestionId": 4
+         }]
+    },
+    {    
+     "Id":5,
+     "MinimalPointToGetNextQuestion": 4,
+     "QuestionType": "MultiChoice",
+     "QuestionText": "Proszę zaznaczyć cztery najważniejsze dla Pana/Pani wartości?",
+     "PossibleAnswers":[
+         {"Id":1, "Text": "praca", "Rate": 1},
+         {"Id":2, "Text": "wolnośc", "Rate": 5},
+         {"Id":3, "Text": "pieniądze", "Rate": 0},
+         {"Id":4, "Text": "rodzina", "Rate": 2}
+         ],
+     "DefaultNextQuestionId": -1
+    }
+    
+    ]
+   
+}
