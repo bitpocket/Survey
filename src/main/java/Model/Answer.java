@@ -11,9 +11,13 @@ import java.util.ArrayList;
  *
  * @author adrianrobak
  */
-public class Answer {
+public class Answer {  //opakowanie dla jednej odpowiedzi
+    
+    public Answer(int id){
+        QuestionId = id;
+    }
     public int QuestionId;
-    public String Text;
-    public int[] Indexes;
-    public int Index;
+    public String AnswerText;
+    public int[] AnswerIDs;
+    public int AnswerID;
 }

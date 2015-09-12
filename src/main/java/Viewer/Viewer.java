@@ -7,6 +7,7 @@ package Viewer;
 
 import Controller.Controller;
 import Model.Answer;
+import Model.Question;
 import javax.swing.JFrame;
 
 /**
@@ -18,6 +19,7 @@ public class Viewer {
         JFrame.setDefaultLookAndFeelDecorated(true);
         frame = new TestForm();
         frame.Viewer = this;
+        frame.Controller = controller;
         frame.setTitle("Survey");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
@@ -27,11 +29,19 @@ public class Viewer {
     public void ShowQuestion() {
         frame.ShowQuestion(controller.GetCurrentQuestion());
     }
-    public void CheckAnswer(Answer answer) {
-      controller.CheckAnswer(answer); 
-    }
+    
+    
+    //public void CheckAnswer(Answer answer) {
+     // controller.TryGoToNextQuestion(answer);
+    //}
     TestForm frame;
     public void FinishSurvey() {
         frame.FinishSurvey();
+    }
+
+    public boolean ValidateAnswers() {
+    return frame.ValidateAnswers();
+    
+        
     }
 }

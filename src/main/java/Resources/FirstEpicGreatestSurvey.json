@@ -2,9 +2,26 @@
 "Title": "first Epic Greatest Survey",
 "Author": "misiek Bury",
 "Date": "2015-07-23",
-"Description": "desription of Survey",
+"Description": "description of Survey",
 "Questions":[
-    {
+    {    
+     "Id":0,
+     "MinimalPointToGetNextQuestion": 0,
+     "QuestionType": "MultiChoice",
+     "QuestionText": "Proszę zaznaczyć conajmniej dwie odpowiedzi, ale nie więcej niż trzy?",
+     "MinAnswers": 2,
+     "MaxAnswers": 3,
+     "PossibleAnswers":[
+         {"Id":1, "Text": "niebieski", "Rate": 1},
+         {"Id":2, "Text": "biały", "Rate": 5},
+         {"Id":3, "Text": "czerwony", "Rate": 0},
+         {"Id":4, "Text": "fioletowy", "Rate": 2},
+         {"Id":5, "Text": "czarny", "Rate": 2},
+         {"Id":6, "Text": "żółty", "Rate": 2}
+         ],
+     "DefaultNextQuestionId": 1
+    },
+        {
      "Id": 1,
      "MinimalPointToGetNextQuestion": 0,
      "QuestionType": "OpenQuestion",
@@ -21,27 +38,27 @@
           "Id":1,
           "Text": "student", 
           "Rate": 0,
-          "DescriptionRate": "Ta osoba to student",
+          "DescriptionRate": "Ta osoba to student.",
           "NextQuestionId": -1
          },
          {
           "Id":2,             
           "Text": "własna działalność", 
           "Rate": 5,
-          "DescriptionRate": "Ta osoba prowadzi własną działalność",
+          "DescriptionRate": "Ta osoba prowadzi własną działalność.",
           "NextQuestionId": 3
          },
          {
           "Id":3,             
           "Text": "praca w firmie", 
           "Rate": 4,
-          "DescriptionRate": "Ta osoba pracuje w firmie",
+          "DescriptionRate": "Ta osoba pracuje w firmie.",
           "NextQuestionId": 3
          }]
     },
         {    
      "Id":3,
-     "MinimalPointToGetNextQuestion": 0,
+     "MinimalPointToGetNextQuestion": 3,
      "QuestionType": "SingleChoice",
      "QuestionText": "Jaki jest Pana/Pani stan cywilny?",
      "PossibleAnswers":[
@@ -67,18 +84,138 @@
           "NextQuestionId": 4
          }]
     },
+        {    
+     "Id":4,
+     "MinimalPointToGetNextQuestion": 0,
+     "QuestionType": "SingleChoice",
+     "QuestionText": "Jaki jest Pana/Pani ma kolor oczu?",
+     "PossibleAnswers":[
+         {
+          "Id":1,
+          "Text": "niebieskie", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba ma niebieski kolor oczu.",
+          "NextQuestionId": 5
+         },
+         {
+          "Id":2,
+          "Text": "zielone", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba ma zielony kolor oczu.",
+          "NextQuestionId": 5
+         },
+         {
+          "Id":3,
+          "Text": "szare", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba ma szary kolor oczu.",
+          "NextQuestionId": 5
+         },
+         {
+          "Id":4,
+          "Text": "brązowe", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba ma brązowy kolor oczu.",
+          "NextQuestionId": 5
+         }]
+    },
     {    
      "Id":5,
-     "MinimalPointToGetNextQuestion": 4,
+     "MinimalPointToGetNextQuestion": 0,
      "QuestionType": "MultiChoice",
      "QuestionText": "Proszę zaznaczyć cztery najważniejsze dla Pana/Pani wartości?",
+     "MinAnswers": 4,
+     "MaxAnswers": 4,
      "PossibleAnswers":[
          {"Id":1, "Text": "praca", "Rate": 1},
-         {"Id":2, "Text": "wolnośc", "Rate": 5},
+         {"Id":2, "Text": "wolność", "Rate": 5},
          {"Id":3, "Text": "pieniądze", "Rate": 0},
          {"Id":4, "Text": "rodzina", "Rate": 2}
          ],
-     "DefaultNextQuestionId": -1
+     "DefaultNextQuestionId": 6
+    },
+    {    
+     "Id":6,
+     "MinimalPointToGetNextQuestion": 0,
+     "QuestionType": "MultiChoice",
+     "QuestionText": "Proszę zaznaczyć trzy kolory, które Pan/Pani lubi?",
+      "MinAnswers": 3,
+     "MaxAnswers": 3,
+     "PossibleAnswers":[
+         {"Id":1, "Text": "niebieski", "Rate": 1},
+         {"Id":2, "Text": "biały", "Rate": 5},
+         {"Id":3, "Text": "czerwony", "Rate": 0},
+         {"Id":4, "Text": "fioletowy", "Rate": 2},
+         {"Id":5, "Text": "czarny", "Rate": 2},
+         {"Id":6, "Text": "żółty", "Rate": 2}
+         ],
+     "DefaultNextQuestionId": 7
+    },
+    {    
+     "Id":7,
+     "MinimalPointToGetNextQuestion": 0,
+     "QuestionType": "MultiChoice",
+     "QuestionText": "Proszę zaznaczyć trzy kolory, które Pan/Pani lubi?",
+     "MinAnswers": 3,
+     "MaxAnswers": 3,
+     "PossibleAnswers":[
+         {"Id":1, "Text": "lubię gdy niebo jest niebieskie, ptaki śpiewają i kwiaty pięknie pachną, a kobiety się opalają", "Rate": 1},
+         {"Id":2, "Text": "nie lubię gdy niebo jest niebieskie, ptaki śpiewają i kwiaty pięknie pachną, a kobiety się opalają", "Rate": 5},
+         {"Id":3, "Text": "lubię gdy jest gwieździsta noc, księżyc pełnią świeci, nietoperze latają i kwitną nocne kwiaty", "Rate": 0},
+         {"Id":4, "Text": "nie lubię gdy jest gwieździsta noc, księżyc pełnią świeci, nietoperze latają i kwitną nocne kwiaty", "Rate": 2},
+         {"Id":5, "Text": "lubię gdy czerń nieba zamienia się w błękit, słońce powstaje z odmętów, płatki kwiatów otwierają się i rosa kropi mnie", "Rate": 2},
+         {"Id":6, "Text": "nie lubię gdy czerń nieba zamienia się w błękit, słońce powstaje z odmętów, płatki kwiatów otwierają się i rosa kropi mnie", "Rate": 2},
+         {"Id":7, "Text": "lubię biały kolor tej wody strumyka, której deszcze nie zmącił tejże nocy", "Rate": 2},
+         {"Id":8, "Text": "nie lubię biały kolor tej wody strumyka, której deszcze nie zmącił tejże nocy", "Rate": 2},
+         {"Id":9, "Text": "lubię młyny mielące ziarna, i mąkę białą jak manna, i chleba gorącego okruszek, i masła dać na kromkę muszę", "Rate": 2},
+         {"Id":10, "Text": "nie lubię młyny mielące ziarna, i mąkę białą jak manna, i chleba gorącego okruszek, i masła dać na kromkę muszę", "Rate": 2},
+         {"Id":11, "Text": "lubię motyla, gdy na nosie siada", "Rate": 2},
+         {"Id":12, "Text": "nie lubię motyla, gdy na nosie siada", "Rate": 2}
+         ],
+     "DefaultNextQuestionId": 8
+    },
+    {    
+     "Id":8,
+     "MinimalPointToGetNextQuestion": 0,
+     "QuestionType": "SingleChoice",
+     "QuestionText": "Co rozumie Pan/Pani poprzez pomaganie biednym ludziom?",
+     "PossibleAnswers":[
+         {
+          "Id":1,
+          "Text": "przekazywanie im pieniędzy", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy.",
+          "NextQuestionId": 9
+         },
+         {
+          "Id":2,
+          "Text": "przekazywanie im produktów spożywczych i odzieży", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba pomaganie biednym rozumie jako przekazywanie im produktów spożywczych i odzieży.",
+          "NextQuestionId": 9
+         },
+         {
+          "Id":3,
+          "Text": "wsparcie emocjonalne", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba pomaganie biednym rozumie jako wsparcie emocjonalne.",
+          "NextQuestionId": 34
+         },
+         {
+          "Id":4,
+          "Text": "pomoc w dotarciu do ośrodków pomocy społecznej", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba pomaganie biednym rozumie jako pomoc w dotarciu do ośrodków pomocy społecznej.",
+          "NextQuestionId": 9
+         },
+         {
+          "Id":5,
+          "Text": "wsparcie ich sytuacji poprzez wyrażanie opinii w mediach, w lokalnych lub ogólnopolskich jednostkach administracyjnych.", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba pomaganie biednym rozumie jako wsparcie ich sytuacji poprzez wyrażanie opinii w mediach, w lokalnych lub ogólnopolskich jednostkach administracyjnych.",
+          "NextQuestionId": 9
+         }
+         ]
     }
     
     ]

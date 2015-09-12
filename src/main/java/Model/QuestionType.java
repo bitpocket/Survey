@@ -10,7 +10,9 @@ package Model;
  * @author adrianrobak
  */
 public enum QuestionType {
+    Undefined,
     SingleChoice,
     MultiChoice,
     OpenQuestion,
+    NumberQuestion,
 }

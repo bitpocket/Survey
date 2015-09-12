@@ -47,7 +47,7 @@ public class Survey {
     private int GetNextQuestionId(Question currentQuestion, Answer answer) {          
         if (currentQuestion.QuestionType == QuestionType.SingleChoice)
         {
-            PossibleAnswer possibleAnswer = currentQuestion.GetPossibleAnswer(answer.Index);
+            PossibleAnswer possibleAnswer = currentQuestion.GetPossibleAnswer(answer.AnswerID);
             return possibleAnswer.NextQuestionId;
             
         }else

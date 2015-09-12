@@ -9,10 +9,8 @@ package Model;
  *
  * @author Leon
  */
-public class PossibleAnswer {
-    public int Id;
-    public String Text;
-    public int Rate;
-    public String DescriptionRate;
-    public int NextQuestionId;
+public enum OsType {
+    Undefined,
+    Mac,
+    Windows
 }

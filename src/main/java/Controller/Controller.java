@@ -6,6 +6,8 @@
 package Controller;
 import Model.Answer;
 import Model.Model;
+import Model.Os;
+import Model.OsType;
 import Model.Question;
 import Model.QuestionType;
 import Viewer.Viewer;
@@ -19,15 +21,24 @@ public class Controller {
     public Controller() {
         this.Viewer = new Viewer(this);
         this.Model = new Model();
-        StartSurvey();
+        
     }
-     public void StartSurvey(){
-         //Model.LoadSurvey("/Users/adrianrobak/NetBeansProjects/Test/src/Resources/FirstEpicGreatestSurvey.json");
-         Model.CurrentSurvey =
-                 Model.LoadSurvey("e:\\Projekts\\Git\\Survey\\src\\main\\java\\Resources\\FirstEpicGreatestSurvey.json");
-         Model.CurrentQuestion = Model.GetFirstQuestion();
-         ShowQuestion();
+    
+    public void StartSurvey(){
+        String fileName = "";
+        OsType os = Os.getOs();
+        
+        if (os == OsType.Mac){
+            fileName = "/Users/adrianrobak/Dropbox/02.Adrianu/07.Witelon/99.pytania/Survey/src/main/java/Resources/FirstEpicGreatestSurvey.json";
+        } else if (os == OsType.Windows) {
+            fileName = "e:\\Projekts\\Git\\Survey\\src\\main\\java\\Resources\\FirstEpicGreatestSurvey.json";
+        }
+            
+        Model.CurrentSurvey = Model.LoadSurvey(fileName);
+        Model.CurrentQuestion = Model.GetFirstQuestion();
+        ShowQuestion();
     }
+     
     public void ShowQuestion(){
         if (Model.CurrentQuestion == null){
                  FinishSurvey();
@@ -36,18 +47,26 @@ public class Controller {
                  Viewer.ShowQuestion();
              }
     }
-    private void FinishSurvey() {
+    
+    public void FinishSurvey() {
         Viewer.FinishSurvey();
     }
-    public void CheckAnswer(Answer answer){
-        Model.CheckAnswer(answer);
-        Model.CurrentQuestion = Model.GetNextQuestion(answer);
-        ShowQuestion();
+    public boolean TryGoToNextQuestion(Answer answer){
+        if (Viewer.ValidateAnswers()){
+            //to do: zapisywanie odpowiedzi --> Panel admina
+        
+            Model.CurrentQuestion = Model.GetNextQuestion(answer);
+            ShowQuestion();
+            return true;
+            }
+        else return false;
     }
 
     public QuestionType getCurrentQuestionType() {
-        return Model.CurrentQuestion.QuestionType;
-        
+        if (Model.CurrentQuestion!=null){
+        return Model.CurrentQuestion.QuestionType;    
+        } 
+        return null;
     }
     public Question GetCurrentQuestion(){
         return Model.CurrentQuestion;

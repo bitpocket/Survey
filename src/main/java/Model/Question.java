@@ -18,7 +18,31 @@ public class Question {
     public String QuestionText;
     public int DefaultNextQuestionId;
     public ArrayList<PossibleAnswer> PossibleAnswers;
-
+    private ArrayList<PossibleAnswer> MixedPossibleAnswers;
+    public int MinAnswers;
+    public int MaxAnswers;
+    
+    public ArrayList<PossibleAnswer> DoMixPossibleAnswers(ArrayList<PossibleAnswer> OriginalList){
+        //do to make random list
+//ArrayList<PossibleAnswer> result = new  ArrayList<PossibleAnswer>();
+        return OriginalList;
+    }
+    
+    public ArrayList<PossibleAnswer> GetMixedPossibleAnswers(){
+        if (MixedPossibleAnswers == null){
+        MixedPossibleAnswers = DoMixPossibleAnswers(PossibleAnswers);
+        }
+        return MixedPossibleAnswers;
+    }
+    public int GetAnswerId(int index){
+        if (index >=0 && index<MixedPossibleAnswers.size()){
+          return MixedPossibleAnswers.get(index).Id;
+        }
+        else {
+          return -1;  
+        }
+        
+    }
     PossibleAnswer GetPossibleAnswer(int AnswerIndex) {
         for (int i=0; i<PossibleAnswers.size();i++)
             if (PossibleAnswers.get(i).Id == AnswerIndex)
@@ -26,4 +50,5 @@ public class Question {
         
         return null;
     }
+    
 }
