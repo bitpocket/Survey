@@ -29,7 +29,7 @@ public class Controller {
         OsType os = Os.getOs();
         
         if (os == OsType.Mac){
-            fileName = "/Users/adrianrobak/Dropbox/02.Adrianu/07.Witelon/99.pytania/Survey/src/main/java/Resources/FirstEpicGreatestSurvey.json";
+            fileName = "/Users/adrianrobak/Survey/src/main/java/Resources/FirstEpicGreatestSurvey.json";
         } else if (os == OsType.Windows) {
             fileName = "e:\\Projekts\\Git\\Survey\\src\\main\\java\\Resources\\FirstEpicGreatestSurvey.json";
         }
