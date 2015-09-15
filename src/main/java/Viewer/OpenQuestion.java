@@ -88,7 +88,7 @@ public class OpenQuestion extends javax.swing.JPanel {
     Answer GetAnswer() {
         Answer a = new Answer(Q.Id);        
         
-        // to do
+        a.AnswerText = AnswerText.getText();
         
         return a;
     }
