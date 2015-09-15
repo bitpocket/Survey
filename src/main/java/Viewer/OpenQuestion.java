@@ -83,12 +83,16 @@ public class OpenQuestion extends javax.swing.JPanel {
     // End of variables declaration//GEN-END:variables
 
     boolean ValidateAnswer() {
-        if(AnswerText.getText() != ""){
-        return true;
+        
+        String val = AnswerText.getText();
+        Boolean valb = val.equals("");
+        
+        if(!valb){
+            return true;
         }
         else {
-        JOptionPane.showMessageDialog(null, "You need to fill something.");
-        return false;
+            JOptionPane.showMessageDialog(null, "You need to fill something.");
+            return false;
         }
     }
 
