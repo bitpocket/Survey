@@ -7,6 +7,7 @@ package Viewer;
 
 import Model.Answer;
 import Model.Question;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -82,8 +83,14 @@ public class OpenQuestion extends javax.swing.JPanel {
     // End of variables declaration//GEN-END:variables
 
     boolean ValidateAnswer() {
-        return true; //to do --> coś trzeba wpisać
-}
+        if(AnswerText.getText() != ""){
+        return true;
+        }
+        else {
+        JOptionPane.showMessageDialog(null, "You need to fill something.");
+        return false;
+        }
+    }
 
     Answer GetAnswer() {
         Answer a = new Answer(Q.Id);        
