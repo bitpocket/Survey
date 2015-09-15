@@ -4,23 +4,6 @@
 "Date": "2015-07-23",
 "Description": "description of Survey",
 "Questions":[
-    {    
-     "Id":0,
-     "MinimalPointToGetNextQuestion": 0,
-     "QuestionType": "MultiChoice",
-     "QuestionText": "Proszę zaznaczyć conajmniej dwie odpowiedzi, ale nie więcej niż trzy?",
-     "MinAnswers": 2,
-     "MaxAnswers": 3,
-     "PossibleAnswers":[
-         {"Id":1, "Text": "niebieski", "Rate": 1},
-         {"Id":2, "Text": "biały", "Rate": 5},
-         {"Id":3, "Text": "czerwony", "Rate": 0},
-         {"Id":4, "Text": "fioletowy", "Rate": 2},
-         {"Id":5, "Text": "czarny", "Rate": 2},
-         {"Id":6, "Text": "żółty", "Rate": 2}
-         ],
-     "DefaultNextQuestionId": 1
-    },
         {
      "Id": 1,
      "MinimalPointToGetNextQuestion": 0,
