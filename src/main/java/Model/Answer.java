@@ -18,6 +18,6 @@ public class Answer {  //opakowanie dla jednej odpowiedzi
     }
     public int QuestionId;
     public String AnswerText;
-    public int[] AnswerIDs;
+    public ArrayList<Integer> AnswerIDs = new ArrayList<>();
     public int AnswerID;
 }
