@@ -5,10 +5,19 @@
  */
 package Model;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 /**
  *
  * @author adrianrobak
  */
 public class UserSession {
-    
+    public String SurveyId;
+    public int UserId;
+    public int Rate;
+    public ArrayList<String> SummaryDecriptionRate = new ArrayList<>();
+    public Date DateOfFinish;
+
+   
 }
