@@ -302,9 +302,11 @@ public class MultiChoice extends javax.swing.JPanel {
     
     Answer GetAnswer() {
         Answer a = new Answer(CurrentQuestion.Id);        
-        
-        // to do
-        
+        for (int i = 0; i<CheckBoxes.size(); i++){
+            if (CheckBoxes.get(i).isSelected()){
+                a.AnswerIDs.add(CurrentQuestion.GetMixedPossibleAnswers().get(i).Id);
+            }
+        }
         return a;
     }
 }
