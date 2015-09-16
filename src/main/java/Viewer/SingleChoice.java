@@ -315,9 +315,7 @@ public class SingleChoice extends javax.swing.JPanel {
 
     Answer GetAnswer() {
         Answer a = new Answer(Q.Id);        
-        
         a.AnswerID = GetAnswerId(Q);
-        
         return a;
     }
 
