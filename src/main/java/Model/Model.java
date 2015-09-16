@@ -35,6 +35,8 @@ public class Model {
         return result;
     }
     
+    public UserSession CurrentSession;
+    
     public void SaveSurvey(String fileName){
         Survey obj = new Survey();
 	Gson gson = new Gson();

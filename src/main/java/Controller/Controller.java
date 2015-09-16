@@ -10,6 +10,7 @@ import Model.Os;
 import Model.OsType;
 import Model.Question;
 import Model.QuestionType;
+import Model.UserSession;
 import Viewer.Viewer;
 /**
  *
@@ -23,7 +24,10 @@ public class Controller {
         this.Model = new Model();
         
     }
-    
+    public void StartSession(){
+        this.Model.CurrentSession = new UserSession();
+        StartSurvey();
+    }
     public void StartSurvey(){
         String fileName = "";
         OsType os = Os.getOs();
@@ -53,6 +57,9 @@ public class Controller {
     }
     public boolean TryGoToNextQuestion(Answer answer){
         if (Viewer.ValidateAnswers()){
+            this.Model.CurrentSession.SendAnswers(answer);  
+                    
+
             //to do: zapisywanie odpowiedzi --> Panel admina
         
             Model.CurrentQuestion = Model.GetNextQuestion(answer);

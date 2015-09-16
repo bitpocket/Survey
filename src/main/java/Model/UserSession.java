@@ -19,5 +19,11 @@ public class UserSession {
     public ArrayList<String> SummaryDecriptionRate = new ArrayList<>();
     public Date DateOfFinish;
 
-   
+    public void SendAnswers(Answer answer) {
+        CountPoints(answer);
+    }
+
+    private void CountPoints(Answer answer) {
+        //do to: liczenie punktów
+    }
 }

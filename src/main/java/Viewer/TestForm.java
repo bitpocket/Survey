@@ -112,7 +112,7 @@ public class TestForm extends javax.swing.JFrame {
 
     private void StartButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StartButtonActionPerformed
 
-        Controller.StartSurvey();
+        Controller.StartSession();
         StartButton.setVisible(false);
         SurveyMessage.setVisible(false);
         buttonNext.setVisible(true);
