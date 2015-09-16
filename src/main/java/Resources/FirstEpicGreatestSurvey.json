@@ -130,7 +130,8 @@
          {"Id":3, "Text": "czerwony", "Rate": 0},
          {"Id":4, "Text": "fioletowy", "Rate": 2},
          {"Id":5, "Text": "czarny", "Rate": 2},
-         {"Id":6, "Text": "żółty", "Rate": 2}
+         {"Id":6, "Text": "żółty", "Rate": 2},
+         {"Id":7, "Text": "czarny", "Rate": 3}
          ],
      "DefaultNextQuestionId": 7
     },
