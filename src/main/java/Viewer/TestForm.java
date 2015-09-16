@@ -39,6 +39,7 @@ public class TestForm extends javax.swing.JFrame {
         buttonNext = new javax.swing.JButton();
         StartButton = new javax.swing.JButton();
         SurveyMessage = new javax.swing.JLabel();
+        FinishButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,6 +60,13 @@ public class TestForm extends javax.swing.JFrame {
 
         SurveyMessage.setText("jLabel1");
 
+        FinishButton.setLabel("Finish");
+        FinishButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FinishButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -68,12 +76,14 @@ public class TestForm extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(81, 81, 81)
                         .addComponent(StartButton, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 299, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addComponent(FinishButton, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(buttonNext))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(SurveyMessage, javax.swing.GroupLayout.PREFERRED_SIZE, 604, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 32, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -84,7 +94,9 @@ public class TestForm extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(buttonNext)
-                    .addComponent(StartButton, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(StartButton, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(FinishButton, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
@@ -105,12 +117,11 @@ public class TestForm extends javax.swing.JFrame {
         SurveyMessage.setVisible(false);
         buttonNext.setVisible(true);
     }//GEN-LAST:event_StartButtonActionPerformed
-    
-    private void FinishButtonActionPerformed(java.awt.event.ActionEvent evt) {                                            
 
-        Controller.FinishSurvey();
-        //System.exit(0);
-    }   
+    private void FinishButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FinishButtonActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_FinishButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -148,26 +159,27 @@ public class TestForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton FinishButton;
     private javax.swing.JButton StartButton;
     private javax.swing.JLabel SurveyMessage;
     private javax.swing.JButton buttonNext;
     // End of variables declaration//GEN-END:variables
 
     public void StartWindows(){
-     ClearViewer();
-     SurveyMessage.setVisible(true);
-     SurveyMessage.setText("Hello! This is a survey. Please answer to all questions. We reply only to interesing applications.");
-     buttonNext.setVisible(false);
-     StartButton.setVisible(true);
+        ClearViewer();
+        FinishButton.setVisible(false);
+        SurveyMessage.setVisible(true);
+        SurveyMessage.setText("Hello! This is a survey. Please answer to all questions. We reply only to interesing applications.");
+        buttonNext.setVisible(false);
+        StartButton.setVisible(true);
     }
     public void FinishSurvey() {
         ClearViewer();
-        SurveyMessage.setText("Thank You for Your attention. We will contact You. Be patient.");
+        StartButton.setVisible(false);
         buttonNext.setVisible(false);
+        FinishButton.setVisible(true);
         SurveyMessage.setVisible(true);
-        StartButton.setText("Finish");
-        StartButton.setVisible(true);
-        
+        SurveyMessage.setText("Thank You for Your attention. We will contact You. Be patient.");                 
     }
 
     public void ShowQuestion(Question question) {
