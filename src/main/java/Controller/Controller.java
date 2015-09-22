@@ -18,7 +18,7 @@ import Viewer.Viewer;
  */
 public class Controller {
     Viewer Viewer;
-    Model Model;
+    public Model Model;
     public Controller() {
         this.Viewer = new Viewer(this);
         this.Model = new Model();
@@ -84,5 +84,9 @@ public class Controller {
 
     public int getCurrentQuestionId() {
         return Model.CurrentQuestion.Id;
+    }
+
+    public int getTotalRate() {
+        return Model.CurrentSession.TotalRate;
     }
 }

@@ -45,7 +45,7 @@ public class Question {
     }
     PossibleAnswer GetPossibleAnswer(int id) {
         
-        if (PossibleAnswers != null) {                
+        if (PossibleAnswers != null) {
             for (PossibleAnswer PossibleAnswer : PossibleAnswers) {
                 if (PossibleAnswer.Id == id) {
                     return PossibleAnswer;
