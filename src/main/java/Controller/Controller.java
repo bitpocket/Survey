@@ -39,6 +39,7 @@ public class Controller {
         }
             
         Model.CurrentSurvey = Model.LoadSurvey(fileName);
+        Model.CurrentSession.CurrentSurvey = Model.CurrentSurvey;
         Model.CurrentQuestion = Model.GetFirstQuestion();
         ShowQuestion();
     }

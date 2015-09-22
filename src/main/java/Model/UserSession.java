@@ -13,9 +13,9 @@ import java.util.Date;
  * @author adrianrobak
  */
 public class UserSession {
-    public String SurveyId;
+    public Survey CurrentSurvey;
     public int UserId;
-    public int Rate;
+    public int TotalRate;
     public ArrayList<String> SummaryDecriptionRate = new ArrayList<>();
     public Date DateOfFinish;
 
@@ -23,7 +23,13 @@ public class UserSession {
         CountPoints(answer);
     }
 
-    private void CountPoints(Answer answer) {
-        //do to: liczenie punktów
+    private void CountPoints(Answer a) {
+        Question q = CurrentSurvey.getQuestion(a.QuestionId);
+        if (q!= null){
+            PossibleAnswer pa = q.GetPossibleAnswer(a.AnswerID);
+            if (pa!= null){
+                TotalRate = pa.Rate + TotalRate;
+            }
+        }
     }
 }

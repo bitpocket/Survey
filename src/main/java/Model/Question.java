@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class Question {
     public int Id;    
-    public String MinimalPointToGetNextQuestion;
+    public int MinimalPointToGetNextQuestion;
     public QuestionType QuestionType;
     public String QuestionText;
     public int DefaultNextQuestionId;
@@ -43,9 +43,9 @@ public class Question {
         }
         
     }
-    PossibleAnswer GetPossibleAnswer(int AnswerIndex) {
+    PossibleAnswer GetPossibleAnswer(int id) {
         for (int i=0; i<PossibleAnswers.size();i++)
-            if (PossibleAnswers.get(i).Id == AnswerIndex)
+            if (PossibleAnswers.get(i).Id == id)
                 return PossibleAnswers.get(i);
         
         return null;

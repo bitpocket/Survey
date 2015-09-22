@@ -53,4 +53,13 @@ public class Survey {
         }else
             return currentQuestion.DefaultNextQuestionId;
     }
+
+    Question getQuestion(int QuestionId) {
+        for (Question Question : Questions) {
+            if (Question.Id == QuestionId) {
+                return Question;
+            }
+        }
+        return null;
+    }
 }
