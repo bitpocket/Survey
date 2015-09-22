@@ -44,11 +44,15 @@ public class Question {
         
     }
     PossibleAnswer GetPossibleAnswer(int id) {
-        for (int i=0; i<PossibleAnswers.size();i++)
-            if (PossibleAnswers.get(i).Id == id)
-                return PossibleAnswers.get(i);
+        
+        if (PossibleAnswers != null) {                
+            for (PossibleAnswer PossibleAnswer : PossibleAnswers) {
+                if (PossibleAnswer.Id == id) {
+                    return PossibleAnswer;
+                }
+            }
+        }
         
         return null;
     }
-    
 }
