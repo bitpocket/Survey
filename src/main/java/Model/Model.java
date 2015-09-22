@@ -8,10 +8,8 @@ import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 
 /**
@@ -29,9 +27,9 @@ public class Model {
 		result = gson.fromJson(br, Survey.class);
 		System.out.println(result);
  
-	} catch (IOException e) {
-		e.printStackTrace();
-	}                      
+	} catch (IOException e) {            
+            Log.showError("Trouble with open the file: " + fileName);
+	}
         return result;
     }
     
