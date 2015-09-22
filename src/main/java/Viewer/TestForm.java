@@ -143,7 +143,11 @@ public class TestForm extends javax.swing.JFrame {
         buttonNext.setVisible(false);
         FinishButton.setVisible(true);
         SurveyMessage.setVisible(true);
-        SurveyMessage.setText("Thank You for Your attention. We will contact You. Be patient.Your result is "+ Controller.getTotalRate());                 
+        
+        int totalRate = Controller.getTotalRate();
+        String pointSuffix = totalRate <= 1 ? " point." : " points.";
+        
+        SurveyMessage.setText("Thank You for Your attention. We will contact You. Be patient.Your result is "+ totalRate + pointSuffix);
     }
 
     public void ShowQuestion(Question question) {

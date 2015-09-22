@@ -25,11 +25,8 @@ public class UserSession {
 
     private void CountPoints(Answer a) {
         Question q = CurrentSurvey.getQuestion(a.QuestionId);
-        if (q!= null){
-            PossibleAnswer pa = q.GetPossibleAnswer(a.AnswerID);
-            if (pa!= null){
-                TotalRate = pa.Rate + TotalRate;
-            }
+        if (q!= null){           
+            TotalRate += q.getRates(a);
         }
     }
 }

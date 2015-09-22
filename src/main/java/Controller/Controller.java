@@ -37,7 +37,6 @@ public class Controller {
         } else if (os == OsType.Windows) {
             //fileName = "e:\\Projekts\\Git\\Survey\\src\\main\\java\\Resources\\FirstEpicGreatestSurvey.json";
             fileName = "C:\\Users\\wcendrzak\\Documents\\Survey\\src\\main\\java\\Resources\\FirstEpicGreatestSurvey.json";
-                       //"C:\\Users\\wcendrzak\\Documents\\Survey
         }
             
         Model.CurrentSurvey = Model.LoadSurvey(fileName);

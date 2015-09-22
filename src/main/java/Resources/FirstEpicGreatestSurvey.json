@@ -20,7 +20,7 @@
          {
           "Id":1,
           "Text": "student", 
-          "Rate": 0,
+          "Rate": 5,
           "DescriptionRate": "Ta osoba to student.",
           "NextQuestionId": -1
          },

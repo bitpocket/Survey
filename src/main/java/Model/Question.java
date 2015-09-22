@@ -55,4 +55,41 @@ public class Question {
         
         return null;
     }
+    
+    int getRate(int answerId) {
+        int rate = 0;
+            
+        if (GetPossibleAnswer(answerId) != null) {
+            rate = GetPossibleAnswer(answerId).Rate;
+        }
+
+        return rate;      
+    }
+
+    int getRates(Answer a) {
+        if (QuestionType == QuestionType.OpenQuestion) {
+            
+            return 0;
+            
+        } else if (QuestionType == QuestionType.SingleChoice) {
+            
+            return getRate(a.AnswerID);
+            
+        } else if (QuestionType == QuestionType.MultiChoice) {
+            
+            int rate = 0;
+            
+            for(int aid : a.AnswerIDs) {
+                
+                rate += getRate(aid);
+            }
+            
+            return rate;
+            
+        } else {
+            
+            return 0;
+            
+        }
+    }
 }
