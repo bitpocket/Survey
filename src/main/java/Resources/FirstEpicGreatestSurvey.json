@@ -4,7 +4,27 @@
 "Date": "2015-07-23",
 "Description": "description of Survey",
 "Questions":[
-        {
+    {    
+     "Id":0,
+     "QuestionType": "MultiChoice",
+     "QuestionText": "Co rozumie Pan/Pani poprzez pomaganie biednym ludziom?",
+     "PossibleAnswers":[
+         {
+          "Id":1,
+          "Text": "<html>przekazywanie im pieniędzy iTa osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy i Ta osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy</html>", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy i",
+          "NextQuestionId": 9
+         },
+         {
+          "Id":2,
+          "Text": "przekazywanie im produktów spożywczych i odzieży i Ta osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy Ta osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy Ta osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy ", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba pomaganie biednym rozumie jako przekazywanie im produktów spożywczych i odzieży.",
+          "NextQuestionId": 9
+         }]
+    },
+    {
      "Id": 1,
      "QuestionType": "OpenQuestion",
      "QuestionText": "Podaj swoje imię i nazwisko?",

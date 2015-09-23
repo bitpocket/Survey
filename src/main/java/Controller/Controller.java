@@ -35,8 +35,8 @@ public class Controller {
         if (os == OsType.Mac){
             fileName = "/Users/adrianrobak/Survey/src/main/java/Resources/FirstEpicGreatestSurvey.json";
         } else if (os == OsType.Windows) {
-            //fileName = "e:\\Projekts\\Git\\Survey\\src\\main\\java\\Resources\\FirstEpicGreatestSurvey.json";
-            fileName = "C:\\Users\\wcendrzak\\Documents\\Survey\\src\\main\\java\\Resources\\FirstEpicGreatestSurvey.json";
+            fileName = "e:\\Projekts\\Git\\Survey\\src\\main\\java\\Resources\\FirstEpicGreatestSurvey.json";
+            //fileName = "C:\\Users\\wcendrzak\\Documents\\Survey\\src\\main\\java\\Resources\\FirstEpicGreatestSurvey.json";
         }
             
         Model.CurrentSurvey = Model.LoadSurvey(fileName);
