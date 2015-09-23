@@ -15,4 +15,7 @@ public class PossibleAnswer {
     public int Rate;
     public String DescriptionRate;
     public int NextQuestionId;
+    public String getWrappableText() {
+        return "<html>" + Text + "</html>";
+    }
 }

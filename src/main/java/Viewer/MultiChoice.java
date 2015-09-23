@@ -20,36 +20,28 @@ public class MultiChoice extends javax.swing.JPanel {
     private ArrayList<JCheckBox> CheckBoxes = new ArrayList<>(); 
     
     public void Clear(){
-    for (int i = 0; i < CheckBoxes.size(); i++){
-        JCheckBox c = CheckBoxes.get(i);
-        c.setSelected(false);
-    }
+        for (JCheckBox c : CheckBoxes) {
+            c.setSelected(false);
+        }
  }
     public Question CurrentQuestion;
 
     public void Initialization(Question Q) { //musi być void (bez zwracania), bez void funkcja będzie się automatycznie uruchamiać się, 
         CurrentQuestion = Q;
         Clear();
-        String htmlText = "<html>" + Q.QuestionText + "</html>";
         
-        questionText.setText(htmlText);
+        questionText.setText(Q.QuestionText);
         
         for (int i = 0; i < CheckBoxes.size(); i++) {
            
             JCheckBox cb = CheckBoxes.get(i);
             if (i< Q.PossibleAnswers.size()){
-                cb.setText(Q.PossibleAnswers.get(i).Text);
+                cb.setText(Q.PossibleAnswers.get(i).getWrappableText());
                 cb.setVisible(true);
-                 }
+            }
             else {
                 cb.setVisible(false);
-            }
-            
-//JCheckBox cb = new JCheckBox(Q.PossibleAnswers.get(i).Text);
-         //CheckBoxes.add(cb);
-                //this.add(cb);
-                //this.revalidate();
-                //this.repaint();
+            }          
         }    
     }
     /**

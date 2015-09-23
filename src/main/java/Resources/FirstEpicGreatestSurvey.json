@@ -11,18 +11,23 @@
      "PossibleAnswers":[
          {
           "Id":1,
-          "Text": "<html>przekazywanie im pieniędzy iTa osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy i Ta osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy</html>", 
+          "Text": "przekazywanie im pieniędzy iTa osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy i Ta osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy", 
           "Rate": 0,
-          "DescriptionRate": "Ta osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy i",
-          "NextQuestionId": 9
+          "DescriptionRate": "Ta osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy i"
          },
          {
           "Id":2,
           "Text": "przekazywanie im produktów spożywczych i odzieży i Ta osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy Ta osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy Ta osoba pomaganie biednym rozumie jako przekazywanie im pieniędzy ", 
           "Rate": 0,
-          "DescriptionRate": "Ta osoba pomaganie biednym rozumie jako przekazywanie im produktów spożywczych i odzieży.",
-          "NextQuestionId": 9
-         }]
+          "DescriptionRate": "Ta osoba pomaganie biednym rozumie jako przekazywanie im produktów spożywczych i odzieży."
+         },
+         {
+          "Id":3,
+          "Text": "Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker", 
+          "Rate": 0,
+          "DescriptionRate": "Ta osoba pomaganie biednym rozumie jako przekazywanie im produktów spożywczych i odzieży."
+         }],
+          "DefaultNextQuestionId": 1
     },
     {
      "Id": 1,
@@ -52,6 +57,13 @@
          {
           "Id":3,             
           "Text": "praca w firmie", 
+          "Rate": 4,
+          "DescriptionRate": "Ta osoba pracuje w firmie.",
+          "NextQuestionId": 3
+         },
+         {
+          "Id":4,             
+          "Text": "Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker", 
           "Rate": 4,
           "DescriptionRate": "Ta osoba pracuje w firmie.",
           "NextQuestionId": 3

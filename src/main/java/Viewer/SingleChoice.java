@@ -6,10 +6,8 @@
 package Viewer;
 
 import Model.Answer;
-import Model.PossibleAnswer;
 import Model.Question;
 import java.util.ArrayList;
-import javax.swing.JCheckBox;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 
@@ -49,7 +47,7 @@ public class SingleChoice extends javax.swing.JPanel {
            
             JRadioButton rb = RadioButtons.get(i);
             if (i< Q.GetMixedPossibleAnswers().size()){
-                rb.setText(Q.GetMixedPossibleAnswers().get(i).Text);
+                rb.setText(Q.GetMixedPossibleAnswers().get(i).getWrappableText());
                 rb.setVisible(true);
                  }
             else {

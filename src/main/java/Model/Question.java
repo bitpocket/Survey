@@ -15,7 +15,7 @@ public class Question {
     public int Id;
     public QuestionType QuestionType;
     public String QuestionText;
-    public int DefaultNextQuestionId;
+    public int DefaultNextQuestionId = -1;
     public ArrayList<PossibleAnswer> PossibleAnswers;
     private ArrayList<PossibleAnswer> MixedPossibleAnswers;
     public int MinAnswers;
