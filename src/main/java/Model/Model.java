@@ -6,9 +6,11 @@
 package Model;
 import com.google.gson.Gson;
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import javax.swing.JOptionPane;
 
 
@@ -23,9 +25,10 @@ public class Model {
         Gson gson = new Gson();
         Survey result=null;
  	try {
-		BufferedReader br = new BufferedReader(new FileReader(fileName));
-		result = gson.fromJson(br, Survey.class);
-		System.out.println(result);
+            
+            //BufferedReader br = new BufferedReader(new FileReader(fileName));
+            InputStreamReader br = new InputStreamReader(new FileInputStream(fileName), "UTF-8");
+            result = gson.fromJson(br, Survey.class);
  
 	} catch (IOException e) {            
             Log.showError("Trouble with open the file: " + fileName);
