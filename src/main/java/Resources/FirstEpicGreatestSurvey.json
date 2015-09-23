@@ -6,14 +6,12 @@
 "Questions":[
         {
      "Id": 1,
-     "MinimalPointToGetNextQuestion": 0,
      "QuestionType": "OpenQuestion",
      "QuestionText": "Podaj swoje imię i nazwisko?",
      "DefaultNextQuestionId": 2
     },
     {    
      "Id":2,
-     "MinimalPointToGetNextQuestion": 0,
      "QuestionType": "SingleChoice",
      "QuestionText": "Jaką pracę Pan/Pani wykonuje?",
      "PossibleAnswers":[
@@ -41,7 +39,6 @@
     },
         {    
      "Id":3,
-     "MinimalPointToGetNextQuestion": 3,
      "QuestionType": "SingleChoice",
      "QuestionText": "Jaki jest Pana/Pani stan cywilny?",
      "PossibleAnswers":[
@@ -69,7 +66,6 @@
     },
         {    
      "Id":4,
-     "MinimalPointToGetNextQuestion": 0,
      "QuestionType": "SingleChoice",
      "QuestionText": "Jaki jest Pana/Pani ma kolor oczu?",
      "PossibleAnswers":[
@@ -104,7 +100,6 @@
     },
     {    
      "Id":5,
-     "MinimalPointToGetNextQuestion": 0,
      "QuestionType": "MultiChoice",
      "QuestionText": "Proszę zaznaczyć cztery najważniejsze dla Pana/Pani wartości?",
      "MinAnswers": 4,
@@ -119,7 +114,6 @@
     },
     {    
      "Id":6,
-     "MinimalPointToGetNextQuestion": 0,
      "QuestionType": "MultiChoice",
      "QuestionText": "Proszę zaznaczyć trzy kolory, które Pan/Pani lubi?",
       "MinAnswers": 3,
@@ -137,7 +131,6 @@
     },
     {    
      "Id":7,
-     "MinimalPointToGetNextQuestion": 0,
      "QuestionType": "MultiChoice",
      "QuestionText": "Proszę zaznaczyć trzy kolory, które Pan/Pani lubi?",
      "MinAnswers": 3,
@@ -160,7 +153,6 @@
     },
     {    
      "Id":8,
-     "MinimalPointToGetNextQuestion": 0,
      "QuestionType": "SingleChoice",
      "QuestionText": "Co rozumie Pan/Pani poprzez pomaganie biednym ludziom?",
      "PossibleAnswers":[

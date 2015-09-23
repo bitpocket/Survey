@@ -12,8 +12,7 @@ import java.util.ArrayList;
  * @author adrianrobak
  */
 public class Question {
-    public int Id;    
-    public int MinimalPointToGetNextQuestion;
+    public int Id;
     public QuestionType QuestionType;
     public String QuestionText;
     public int DefaultNextQuestionId;

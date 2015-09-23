@@ -72,16 +72,7 @@ public class SingleChoice extends javax.swing.JPanel {
         RadioButtons.add(jRadioButton8);
         RadioButtons.add(jRadioButton9);
         RadioButtons.add(jRadioButton10);
-        RadioButtons.add(jRadioButton11);
-        RadioButtons.add(jRadioButton12);
-        RadioButtons.add(jRadioButton13);
-        RadioButtons.add(jRadioButton14);
-        RadioButtons.add(jRadioButton15);
-        RadioButtons.add(jRadioButton16);
-        RadioButtons.add(jRadioButton17);
-        RadioButtons.add(jRadioButton18);
-        RadioButtons.add(jRadioButton19);
-        RadioButtons.add(jRadioButton20);
+
     }
 
     /**
@@ -105,16 +96,6 @@ public class SingleChoice extends javax.swing.JPanel {
         jRadioButton8 = new javax.swing.JRadioButton();
         jRadioButton9 = new javax.swing.JRadioButton();
         jRadioButton10 = new javax.swing.JRadioButton();
-        jRadioButton11 = new javax.swing.JRadioButton();
-        jRadioButton12 = new javax.swing.JRadioButton();
-        jRadioButton13 = new javax.swing.JRadioButton();
-        jRadioButton14 = new javax.swing.JRadioButton();
-        jRadioButton15 = new javax.swing.JRadioButton();
-        jRadioButton16 = new javax.swing.JRadioButton();
-        jRadioButton17 = new javax.swing.JRadioButton();
-        jRadioButton18 = new javax.swing.JRadioButton();
-        jRadioButton19 = new javax.swing.JRadioButton();
-        jRadioButton20 = new javax.swing.JRadioButton();
 
         questionText.setText("TrescPytania");
         questionText.setName("questionText"); // NOI18N
@@ -154,36 +135,6 @@ public class SingleChoice extends javax.swing.JPanel {
         buttonGroup1.add(jRadioButton10);
         jRadioButton10.setText("jRadioButton10");
 
-        buttonGroup1.add(jRadioButton11);
-        jRadioButton11.setText("jRadioButton11");
-
-        buttonGroup1.add(jRadioButton12);
-        jRadioButton12.setText("jRadioButton12");
-
-        buttonGroup1.add(jRadioButton13);
-        jRadioButton13.setText("jRadioButton13");
-
-        buttonGroup1.add(jRadioButton14);
-        jRadioButton14.setText("jRadioButton14");
-
-        buttonGroup1.add(jRadioButton15);
-        jRadioButton15.setText("jRadioButton15");
-
-        buttonGroup1.add(jRadioButton16);
-        jRadioButton16.setText("jRadioButton16");
-
-        buttonGroup1.add(jRadioButton17);
-        jRadioButton17.setText("jRadioButton17");
-
-        buttonGroup1.add(jRadioButton18);
-        jRadioButton18.setText("jRadioButton18");
-
-        buttonGroup1.add(jRadioButton19);
-        jRadioButton19.setText("jRadioButton19");
-
-        buttonGroup1.add(jRadioButton20);
-        jRadioButton20.setText("jRadioButton20");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -206,18 +157,6 @@ public class SingleChoice extends javax.swing.JPanel {
                             .addComponent(jRadioButton8)
                             .addComponent(jRadioButton9)
                             .addComponent(jRadioButton10))
-                        .addGap(173, 173, 173)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jRadioButton20)
-                            .addComponent(jRadioButton19)
-                            .addComponent(jRadioButton18)
-                            .addComponent(jRadioButton17)
-                            .addComponent(jRadioButton16)
-                            .addComponent(jRadioButton15)
-                            .addComponent(jRadioButton14)
-                            .addComponent(jRadioButton13)
-                            .addComponent(jRadioButton12)
-                            .addComponent(jRadioButton11))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -227,45 +166,25 @@ public class SingleChoice extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(questionText, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton11))
+                .addComponent(jRadioButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton2)
-                    .addComponent(jRadioButton12))
+                .addComponent(jRadioButton2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton3)
-                    .addComponent(jRadioButton13))
+                .addComponent(jRadioButton3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton4)
-                    .addComponent(jRadioButton14))
+                .addComponent(jRadioButton4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton5)
-                    .addComponent(jRadioButton15))
+                .addComponent(jRadioButton5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton6)
-                    .addComponent(jRadioButton16))
+                .addComponent(jRadioButton6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton7)
-                    .addComponent(jRadioButton17))
+                .addComponent(jRadioButton7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton8)
-                    .addComponent(jRadioButton18))
+                .addComponent(jRadioButton8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton9)
-                    .addComponent(jRadioButton19))
+                .addComponent(jRadioButton9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton10)
-                    .addComponent(jRadioButton20))
+                .addComponent(jRadioButton10)
                 .addContainerGap(65, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -279,17 +198,7 @@ public class SingleChoice extends javax.swing.JPanel {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton10;
-    private javax.swing.JRadioButton jRadioButton11;
-    private javax.swing.JRadioButton jRadioButton12;
-    private javax.swing.JRadioButton jRadioButton13;
-    private javax.swing.JRadioButton jRadioButton14;
-    private javax.swing.JRadioButton jRadioButton15;
-    private javax.swing.JRadioButton jRadioButton16;
-    private javax.swing.JRadioButton jRadioButton17;
-    private javax.swing.JRadioButton jRadioButton18;
-    private javax.swing.JRadioButton jRadioButton19;
     private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton20;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JRadioButton jRadioButton5;
