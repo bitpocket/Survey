@@ -40,6 +40,11 @@ public class TestForm extends javax.swing.JFrame {
         StartButton = new javax.swing.JButton();
         SurveyMessage = new javax.swing.JLabel();
         FinishButton = new javax.swing.JButton();
+        mainMenuBar = new javax.swing.JMenuBar();
+        fileMenuItem = new javax.swing.JMenu();
+        openMenuItem = new javax.swing.JMenuItem();
+        saveMenuItem = new javax.swing.JMenuItem();
+        aboutMenuItem = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,6 +72,36 @@ public class TestForm extends javax.swing.JFrame {
             }
         });
 
+        fileMenuItem.setText("File");
+
+        openMenuItem.setText("Open");
+        openMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                openMenuItemActionPerformed(evt);
+            }
+        });
+        fileMenuItem.add(openMenuItem);
+
+        saveMenuItem.setText("Save");
+        fileMenuItem.add(saveMenuItem);
+
+        mainMenuBar.add(fileMenuItem);
+
+        aboutMenuItem.setText("About");
+        aboutMenuItem.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                aboutMenuItemMouseClicked(evt);
+            }
+        });
+        aboutMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aboutMenuItemActionPerformed(evt);
+            }
+        });
+        mainMenuBar.add(aboutMenuItem);
+
+        setJMenuBar(mainMenuBar);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -91,7 +126,7 @@ public class TestForm extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(212, 212, 212)
                 .addComponent(SurveyMessage, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(buttonNext)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -122,11 +157,28 @@ public class TestForm extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_FinishButtonActionPerformed
 
+    private void openMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openMenuItemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_openMenuItemActionPerformed
+
+    private void aboutMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutMenuItemActionPerformed
+        
+    }//GEN-LAST:event_aboutMenuItemActionPerformed
+
+    private void aboutMenuItemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aboutMenuItemMouseClicked
+        About.Show();
+    }//GEN-LAST:event_aboutMenuItemMouseClicked
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton FinishButton;
     private javax.swing.JButton StartButton;
     private javax.swing.JLabel SurveyMessage;
+    private javax.swing.JMenu aboutMenuItem;
     private javax.swing.JButton buttonNext;
+    private javax.swing.JMenu fileMenuItem;
+    private javax.swing.JMenuBar mainMenuBar;
+    private javax.swing.JMenuItem openMenuItem;
+    private javax.swing.JMenuItem saveMenuItem;
     // End of variables declaration//GEN-END:variables
 
     public void StartWindows(){
